@@ -1,18 +1,33 @@
 import install_requirements
-import sys, os
-stdout = sys.__stdout__
-stderr = sys.__stderr__
-sys.stdout = open(os.devnull,'w')
-sys.stderr = open(os.devnull,'w')
-import pygame
-import tensorflow as tf
-import matplotlib.pyplot as plt
-import numpy as np
-from tkinter import *
-from tkinter import messagebox
-sys.stdout = stdout
-sys.stderr = stderr
-
+try:
+    import sys, os
+    stdout = sys.__stdout__
+    stderr = sys.__stderr__
+    sys.stdout = open(os.devnull,'w')
+    sys.stderr = open(os.devnull,'w')
+    import pygame
+    import tensorflow as tf
+    import matplotlib.pyplot as plt
+    import numpy as np
+    from tkinter import *
+    from tkinter import messagebox
+    sys.stdout = stdout
+    sys.stderr = stderr
+except:
+    import install_requirements
+    import sys, os
+    stdout = sys.__stdout__
+    stderr = sys.__stderr__
+    sys.stdout = open(os.devnull,'w')
+    sys.stderr = open(os.devnull,'w')
+    import pygame
+    import tensorflow as tf
+    import matplotlib.pyplot as plt
+    import numpy as np
+    from tkinter import *
+    from tkinter import messagebox
+    sys.stdout = stdout
+    sys.stderr = stderr
 
 class pixel(object):
     def __init__(self, x, y, width, height):
