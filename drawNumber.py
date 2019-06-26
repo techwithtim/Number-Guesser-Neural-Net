@@ -1,3 +1,5 @@
+import install_requirements
+
 import pygame
 import tensorflow as tf
 import matplotlib.pyplot as plt
