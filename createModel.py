@@ -1,3 +1,4 @@
+# Used to train and save a neural network on the mnist dataset
 import keras
 import tensorflow as tf
 import matplotlib.pyplot as plt
