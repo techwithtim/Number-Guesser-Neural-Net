@@ -1,11 +1,17 @@
 import install_requirements
-
+import sys, os
+stdout = sys.__stdout__
+stderr = sys.__stderr__
+sys.stdout = open(os.devnull,'w')
+sys.stderr = open(os.devnull,'w')
 import pygame
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
 from tkinter import *
 from tkinter import messagebox
+sys.stdout = stdout
+sys.stderr = stderr
 
 
 class pixel(object):
@@ -125,6 +131,7 @@ def guess(li):
     window = Tk()
     window.withdraw()
     messagebox.showinfo("Prediction", "I predict this number is a: " + str(t))
+    window.destroy()
     #plt.imshow(li[0], cmap=plt.cm.binary)
     #plt.show()
 
