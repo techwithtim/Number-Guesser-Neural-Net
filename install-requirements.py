@@ -16,7 +16,7 @@ for package in required:
   try:
       print("[IMPORT] Trying to import", package)
       __import__(package)
-     print("[IMPORT] Successfully imported", package)
+      print("[IMPORT] Successfully imported", package)
   except:
       print("[EXCEPTION]", package, "not installed")
 
@@ -39,4 +39,5 @@ for package in required:
               print("[ERROR 1]", package, "could not be installed")
 
       __import__(package)
+      print("[IMPORT] Successfully imported", package)
     
