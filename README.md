@@ -17,7 +17,7 @@ You can watch this video on how the program works: https://www.youtube.com/watch
 
 You can also run Golf-Game in Gitpod, a free online dev environment for GitHub:
 
-If you're intersted in a paid subscription with GitPod use the coupon code: **TECHWITHTIM2FQBMX**
+If you're intersted in a paid subscription with GitPod use the coupon code: **TECHWITHTIM19**
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Number-Guesser-Neural-Net/blob/master/drawNumber.py)
 
